@@ -1,5 +1,6 @@
 import { Video } from "@/components/original/Ottiglio";
 import NavBarMenu from "@/components/original/navbar";
+import ExampleClientComponent from "@/components/testing/path";
 import Image from "next/image";
 
 export default function Home() {

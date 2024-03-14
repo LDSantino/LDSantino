@@ -1,5 +1,6 @@
 import React from "react";
 import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button} from "@nextui-org/react";
+import ExampleClientComponent from "../testing/path";
 
 export default function NavBarMenu() {
   return (
@@ -22,6 +23,11 @@ export default function NavBarMenu() {
           <Link color="foreground" href="#">
             Integrations
           </Link>
+        </NavbarItem>
+        <NavbarItem>
+            <Link color="foreground" href="#">
+                <ExampleClientComponent/>
+            </Link>
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
