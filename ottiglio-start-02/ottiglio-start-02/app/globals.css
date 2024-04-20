@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.spacer {
+  height: 50px;
+}
+
+.wimbledon {
+  background-color: #ba6045;
+}
+
+.hero {
+  width: 100%;
+  height: 550px;
+  z-index: -1;
+  border: 1px solid violet;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 550px !important;
+  object-fit: cover; /* Cover the entire div without losing aspect ratio */
+}
+
+.cardTitle {
+  z-index: 5;
+  border: 1px solid black;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  border: 1px solid red !important;
+  background-color: white !important;
+}
+
+.readMore {
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: -webkit-box;
+}
+
+.heroEsperienze {
+  width: 100%;
+  height: 650px;
+  z-index: -1;
+  border: 1px solid violet;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.immaginiEsperienze {
+  width: 100%;
+  height: 350px;
+}
+
+.heroContacts {
+  width: 100%;
+  height: 400px;
+  z-index: -1;
+  border: 1px solid violet;
+  padding: 20px;
+}
+
+.bottoniSocial {
+  width: 80px;
+  height: 40px;
+}
